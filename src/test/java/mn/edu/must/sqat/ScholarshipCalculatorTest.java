@@ -128,4 +128,16 @@ class ScholarshipCalculatorTest {
         assertThrows(IllegalArgumentException.class,
                 () -> calculator.scholarship(3.5, -1, false));
     }
+
+    @Test
+    void gpa_handlesOneElement() {
+        double[] scores = {95};
+        assertEquals(4.0, calculator.gpa(scores));
+    }
+
+    @Test
+    void gpa_handlesMultipleElements() {
+        double[] scores = {95, 85, 75, 65};
+        assertEquals(2.5, calculator.gpa(scores));
+    }
 }
