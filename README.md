@@ -19,6 +19,26 @@
 | JUnit Jupiter | 5.10.2 |
 | JaCoCo | 0.8.12 |
 
+Ашигласан Java хувилбарыг `java -version` командаар шалгасан.
+
+```text
+[heloise@arch lab08]$ java -version
+openjdk version "17.0.21.0.3" 2026-10-24
+OpenJDK Runtime Environment (build 17.0.21.0.3+1)
+OpenJDK 64-Bit Server VM (build 17.0.21.0.3+1, mixed mode, sharing)
+```
+
+Ашигласан Maven болон Java орчны мэдээллийг `mvn -version` командаар шалгасан.
+
+```text
+[heloise@arch lab08]$ mvn -version
+Apache Maven 3.10.0 (c43a36b8d67be7e0805a411bc0898af1a51f5472)
+Maven home: /usr/share/java/maven
+Java version: 17.0.21.0.3, vendor: Arch Linux, runtime: /usr/lib/jvm/java-17-openjdk
+Default locale: en_US, platform encoding: UTF-8, time zone: Asia/Ulaanbaatar
+OS name: "linux", version: "7.2.11-arch1-1", arch: "amd64", family: "unix"
+```
+
 ## 3. Төслийн бүтэц
 
 ```text
