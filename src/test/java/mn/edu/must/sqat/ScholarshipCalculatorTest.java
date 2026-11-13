@@ -140,4 +140,38 @@ class ScholarshipCalculatorTest {
         double[] scores = {95, 85, 75, 65};
         assertEquals(2.5, calculator.gpa(scores));
     }
+    @Test
+    void letterGrade_60ShouldBeD() {
+        assertEquals("D", calculator.letterGrade(60));
+    }
+
+    @Test
+    void letterGrade_59_99ShouldBeF() {
+        assertEquals("F", calculator.letterGrade(59.99));
+    }
+
+    @Test
+    void letterGrade_69_99ShouldBeD() {
+        assertEquals("D", calculator.letterGrade(69.99));
+    }
+
+    @Test
+    void letterGrade_0ShouldBeF() {
+        assertEquals("F", calculator.letterGrade(0));
+    }
+
+    @Test
+    void letterGrade_100ShouldBeA() {
+        assertEquals("A", calculator.letterGrade(100));
+    }
+
+    @Test
+    void letterGrade_89_99ShouldBeB() {
+        assertEquals("B", calculator.letterGrade(89.99));
+    }
+
+    @Test
+    void letterGrade_90ShouldBeA() {
+        assertEquals("A", calculator.letterGrade(90));
+    }
 }
