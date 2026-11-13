@@ -146,6 +146,7 @@ CSV тайлан:
 target/site/jacoco/jacoco.csv
 ```
 
+### Feedback засвар
 ### D хэсэг — Boundary Value Testing: Унасан тест
 
 Boundary value testing хийх үед 60 гэсэн заагийн утгыг шалгасан тест амжилтгүй болсон.
